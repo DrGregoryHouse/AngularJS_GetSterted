@@ -11,6 +11,22 @@
 </head>
 
 <body ng-controller="MainController">
+
+    <div>
+        <h1>
+            GitHub Viewer
+            <img src="https://assets-cdn.github.com/images/icons/emoji/octocat.png?v8">
+        </h1>
+    </div>
+    <div>
+        <form ng-submit="search(username)">
+            <label>Search for a Github User:</label>
+            <br>
+            <input type="text" ng-model="username" required placeholder="Enter username for search...">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+    <hr>
     <div>
         <h3>{{user.login}}</h3>
         <img ng-src="{{user.avatar_url}}" alt="UserImgen" height=100>

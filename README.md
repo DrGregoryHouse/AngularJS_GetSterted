@@ -123,8 +123,8 @@ README.md                --> general information about this repository.
 ```
 
 Changes to be made to the next step:
-- Add
-- Add
+- Add Immediate Function Invocation (IFI) syntax.
+- Add `ng-form` to implement a search by username input parameter.
 
 ### Step 3
 
