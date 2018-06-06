@@ -25,7 +25,7 @@ var MainController = function ($scope, $http) {
     };
 
     var defaultUser = function(){
-        getGithubUser('jmelchorp')
+        getGithubUser('DrGregoryHouse')
     }
     
     defaultUser();
