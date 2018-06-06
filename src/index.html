@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="githubViewer">
+<html>
 
 <head>
     <meta charset="utf-8" />
@@ -10,20 +10,7 @@
 
 </head>
 
-<body ng-controller="MainController">
-    <div>
-        <h3>{{user.login}}</h3>
-        <img ng-src="{{user.avatar_url}}" alt="UserImgen" height=100>
-        <ul>
-            <li>Name: {{user.name}}
-                <a href="{{user.html_url}}">(view on github)</a>
-            </li>
-            <li>Company: {{user.company}}</li>
-            <li>Location: {{user.location}}</li>
-        </ul>
-    </div>
-
-    <script type="text/javascript" src="./lib/angular.min.js"></script>
+<body>
     <script type="text/javascript" src="./scripts/main.js"></script>
 </body>
 
