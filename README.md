@@ -72,7 +72,7 @@ src/                     --> all the source code of the app (along with unit tes
 README.md                --> general information about this repository.
 ```
 
-Changes to be made to the next step:
+Changes to be made to step 1:
 - Add the 'angular.js' script.
 - Add the `ngApp` directive to bootstrap the application.
 
@@ -97,7 +97,7 @@ src/                     --> all the source code of the app (along with unit tes
 README.md                --> general information about this repository.
 ```
 
-Changes to be made to the next step:
+Changes to be made to step 2:
 - Add
 - Add
 
