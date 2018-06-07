@@ -38,7 +38,6 @@
             <li>Location: {{user.location}}</li>
         </ul>
     </div>
-
     <div>
         <h3>Public repositories:</h3>
         <table>
@@ -57,8 +56,14 @@
                     <td>{{repo.stargazers_count}}</td>
                 </tr>
             </tbody>
+            <tfoot>
+                <tr>
+                    <td>foot 1</td>
+                    <td>foot 2</td>
+                    <td>foot 3</td>
+                </tr>
+            </tfoot>
         </table>
-
     </div>
 
     <script type="text/javascript" src="./lib/angular.min.js"></script>
