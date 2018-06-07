@@ -72,10 +72,6 @@ src/                     --> all the source code of the app (along with unit tes
 README.md                --> general information about this repository.
 ```
 
-Changes to be made to the next step:
-- Add the 'angular.js' script.
-- Add the `ngApp` directive to bootstrap the application.
-
 ### Step 1 - Controllers (ng-app & ng-controller)
 
 In this step, the application consumes Github API in a single view. To get into this step use:
@@ -97,10 +93,6 @@ src/                     --> all the source code of the app (along with unit tes
 README.md                --> general information about this repository.
 ```
 
-Changes to be made to the next step:
-- Add Immediate Function Invocation (IFI) syntax.
-- Add `ng-form` to implement a search by username input parameter.
-
 ### Step 2 - Search (ng-form)
 
 This is where search button is implemented.
@@ -121,10 +113,6 @@ src/                     --> all the source code of the app (along with unit tes
   index.html               --> app layout file (the main HTML template file of the app)
 README.md                --> general information about this repository.
 ```
-
-Changes to be made to the next step:
-- Add use of `ng-repeat` on a table to display user's repository.
-- Add CSS for table diplay style.
 
 ### Step 3 - Lists (ng-repeat)
 
@@ -149,9 +137,6 @@ src/                     --> all the source code of the app (along with unit tes
 README.md                --> general information about this repository.
 ```
 
-Changes to be made to the next step:
-- Add filters to sort elements of `ng-repeat` by category.
-
 ### Step 4 - Filters 
 
  In this part, the use of filters in `ng-repeat`.
@@ -172,8 +157,6 @@ src/                     --> all the source code of the app (along with unit tes
   index.html               --> app layout file (the main HTML template file of the app)
 README.md                --> general information about this repository.
 ```
-Changes to be made to the next step:
-- 
 
 ### Step 5 - views 
 
@@ -196,10 +179,6 @@ src/                     --> all the source code of the app (along with unit tes
 README.md                --> general information about this repository.
 ```
 
-Changes to be made to the next step:
-- Add
-- Add
-
 ### Step 6 - 
 
 Final step for best practices. 
@@ -220,10 +199,6 @@ src/                     --> all the source code of the app (along with unit tes
   index.html               --> app layout file (the main HTML template file of the app)
 README.md                --> general information about this repository.
 ```
-
-Changes to be made to the next step:
-- Add
-- Add
 
 ## Contact
 
