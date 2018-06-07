@@ -72,11 +72,7 @@ src/                     --> all the source code of the app (along with unit tes
 README.md                --> general information about this repository.
 ```
 
-Changes to be made to the next step:
-- Add the 'angular.js' script.
-- Add the `ngApp` directive to bootstrap the application.
-
-### Step 1
+### Step 1 - Controllers (ng-app & ng-controller)
 
 In this step, the application consumes Github API in a single view. To get into this step use:
  
@@ -97,11 +93,7 @@ src/                     --> all the source code of the app (along with unit tes
 README.md                --> general information about this repository.
 ```
 
-Changes to be made to the next step:
-- Add
-- Add
-
-### Step 2
+### Step 2 - Search (ng-form)
 
 This is where search button is implemented.
  
@@ -122,13 +114,9 @@ src/                     --> all the source code of the app (along with unit tes
 README.md                --> general information about this repository.
 ```
 
-Changes to be made to the next step:
-- Add
-- Add
+### Step 3 - Lists (ng-repeat)
 
-### Step 3
-
-In this part, username information is placed in a view.
+In this step, repositories from a user on Github are queried and displayed on a table.
  
 ```git
 git checkout Step03
@@ -143,17 +131,15 @@ src/                     --> all the source code of the app (along with unit tes
     main.js                  --> main Javascript file.
   styles/                  --> all stylesheet information (not used).
     main.css                 --> main Stylesheet file.
+  views/                   --> all HTML templates.
+    userdetails.html         --> view of user details and repos.
   index.html               --> app layout file (the main HTML template file of the app)
 README.md                --> general information about this repository.
 ```
 
-Changes to be made to the next step:
-- Add
-- Add
+### Step 4 - Filters 
 
-### Step 4
-
-In this step, repositories from a user on Github are queried and displayed. 
+ In this part, the use of filters in `ng-repeat`.
  
 ```git
 git checkout Step04
@@ -172,13 +158,9 @@ src/                     --> all the source code of the app (along with unit tes
 README.md                --> general information about this repository.
 ```
 
-Changes to be made to the next step:
-- Add
-- Add
+### Step 5 - views 
 
-### Step 5
-
-In this step, ´ng-include´ is used to organize views.
+In this step, `ng-include`,  `ng-show` and `ng-hide` are implemented to organize views.
  
 ```git
 git checkout Step05
@@ -197,11 +179,7 @@ src/                     --> all the source code of the app (along with unit tes
 README.md                --> general information about this repository.
 ```
 
-Changes to be made to the next step:
-- Add
-- Add
-
-### Step 6
+### Step 6 - 
 
 Final step for best practices. 
  
@@ -221,10 +199,6 @@ src/                     --> all the source code of the app (along with unit tes
   index.html               --> app layout file (the main HTML template file of the app)
 README.md                --> general information about this repository.
 ```
-
-Changes to be made to the next step:
-- Add
-- Add
 
 ## Contact
 

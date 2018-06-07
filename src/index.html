@@ -1,15 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="githubViewer">
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Github Viewer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./styles/main.css" />
-    
 </head>
-<body>
 
-    <script type="text/javascript" src="./scripts/main.js"></script>
+<body ng-controller="MainController">
+    <div>
+        <h1>GitHub Viewer
+            <img src="https://assets-cdn.github.com/images/icons/emoji/octocat.png?v8">
+        </h1>
+    </div>
+    <form ng-submit="search(username)">
+        <label>Search for a Github User:</label>
+        <br>
+        <input type="search" ng-model="username" required placeholder="Enter username for search...">
+        <input type="submit" value="Search">
+    </form>
+
+    <hr>
+    <div ng-include="'./views/user_info.html'" ng-show="user"></div>
+    <script src="./lib/angular.min.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
+
 </html>

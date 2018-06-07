@@ -1,0 +1,41 @@
+<div>
+    <h3>{{user.login}}</h3>
+    <img ng-src="{{user.avatar_url}}" alt="UserImgen" height=100>
+    <ul>
+        <li>Name: {{user.name}}
+            <a href="{{user.html_url}}">(view on github)</a>
+        </li>
+        <li>Company: {{user.company}}</li>
+        <li>Location: {{user.location}}</li>
+    </ul>
+</div>
+<h3>Public repositories:</h3>
+Order by:
+<select ng-model="repoSortOrder">
+    <option value="+name">Name</option>
+    <option value="-stargazers_count">Stars</option>
+    <option value="+language">Language</option>
+</select>
+<table>
+    <thead>
+        <tr>
+            <th>Name:</th>
+            <th>Main language:</th>
+            <th>Stars:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="repo in repos | orderBy:repoSortOrder">
+            <td>{{repo.name}}</td>
+            <td>{{repo.language}}</td>
+            <td>{{repo.stargazers_count}}</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>foot 1</td>
+            <td>foot 2</td>
+            <td>foot 3</td>
+        </tr>
+    </tfoot>
+</table>
