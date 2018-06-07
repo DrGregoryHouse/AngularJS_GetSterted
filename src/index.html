@@ -39,6 +39,28 @@
         </ul>
     </div>
 
+    <div>
+        <h3>Public repositories:</h3>
+        <table>
+            <caption>Table to show some information about this user's repositories.</caption>
+            <thead>
+                <tr>
+                    <th>Name:</th>
+                    <th>Main languaje:</th>
+                    <th>Stars:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="repo in repos">
+                    <td>{{repo.name}}</td>
+                    <td>{{repo.languaje}}</td>
+                    <td>{{repo.stargazers_count}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
     <script type="text/javascript" src="./lib/angular.min.js"></script>
     <script type="text/javascript" src="./scripts/main.js"></script>
 </body>

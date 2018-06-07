@@ -123,8 +123,8 @@ README.md                --> general information about this repository.
 ```
 
 Changes to be made to the next step:
-- Add Immediate Function Invocation (IFI) syntax.
-- Add `ng-form` to implement a search by username input parameter.
+- Add use of `ng-repeat` on a table to display user's repository.
+- Add CSS for table diplay style.
 
 ### Step 3
 
