@@ -76,7 +76,7 @@ Changes to be made to the next step:
 - Add the 'angular.js' script.
 - Add the `ngApp` directive to bootstrap the application.
 
-### Step 1
+### Step 1 - Controllers (ng-app & ng-controller)
 
 In this step, the application consumes Github API in a single view. To get into this step use:
  
@@ -101,7 +101,7 @@ Changes to be made to the next step:
 - Add Immediate Function Invocation (IFI) syntax.
 - Add `ng-form` to implement a search by username input parameter.
 
-### Step 2
+### Step 2 - Search (ng-form)
 
 This is where search button is implemented.
  
@@ -126,9 +126,9 @@ Changes to be made to the next step:
 - Add use of `ng-repeat` on a table to display user's repository.
 - Add CSS for table diplay style.
 
-### Step 3
+### Step 3 - Lists (ng-repeat)
 
-In this part, username information is placed in a view.
+In this step, repositories from a user on Github are queried and displayed on a table.
  
 ```git
 git checkout Step03
@@ -150,12 +150,11 @@ README.md                --> general information about this repository.
 ```
 
 Changes to be made to the next step:
-- Add `ng-include` diretive for redirect to HTML template as view
-- Add 
+- Add filters to sort elements of `ng-repeat` by category.
 
-### Step 4
+### Step 4 - Filters 
 
-In this step, repositories from a user on Github are queried and displayed. 
+ In this part, the use of filters in `ng-repeat`.
  
 ```git
 git checkout Step04
@@ -173,14 +172,12 @@ src/                     --> all the source code of the app (along with unit tes
   index.html               --> app layout file (the main HTML template file of the app)
 README.md                --> general information about this repository.
 ```
-
 Changes to be made to the next step:
-- Add
-- Add
+- 
 
-### Step 5
+### Step 5 - views 
 
-In this step, ´ng-include´ is used to organize views.
+In this step, `ng-include`,  `ng-show` and `ng-hide` are implemented to organize views.
  
 ```git
 git checkout Step05
@@ -203,7 +200,7 @@ Changes to be made to the next step:
 - Add
 - Add
 
-### Step 6
+### Step 6 - 
 
 Final step for best practices. 
  
