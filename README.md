@@ -143,13 +143,15 @@ src/                     --> all the source code of the app (along with unit tes
     main.js                  --> main Javascript file.
   styles/                  --> all stylesheet information (not used).
     main.css                 --> main Stylesheet file.
+  views/                   --> all HTML templates.
+    userdetails.html         --> view of user details and repos.
   index.html               --> app layout file (the main HTML template file of the app)
 README.md                --> general information about this repository.
 ```
 
 Changes to be made to the next step:
-- Add
-- Add
+- Add `ng-include` diretive for redirect to HTML template as view
+- Add 
 
 ### Step 4
 

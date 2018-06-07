@@ -1,36 +1,31 @@
-(function(){
-
-var app = angular.module('githubViewer', []);
-var MainController = function ($scope, $http) {
-    var url = "https://api.github.com/";
-    var item = "users/";
-    var username = "DrGregoryHouse";
-
-    var onUserComplete = function (response) {
-        $scope.user = response.data;
-    };
-
-    var onError = function (reason) {
-        $scope.error = "Could not fetch user.";
-    };
-
-    var getGithubUser = function(user) {
+(function () {
+    var app = angular.module('githubViewer', []);
+    var MainController = function ($scope, $http) {
         var url = "https://api.github.com/";
         var item = "users/";
-        $http.get(url+item+user).then(onUserComplete, onError);
+        var username = "angular";
+        var onUserComplete = function (response) {
+            $scope.user = response.data;
+            $http.get($scope.user.repos_url)
+                .then(onRepos, onError);
+        };
+        var onRepos = function (response) {
+            $scope.repos = response.data;
+        }
+        var onError = function (reason) {
+            $scope.error = "Could not fetch user.";
+        };
+        var getGithubUser = function (user) {
+            $http.get(url + item + user)
+            .then(onUserComplete, onError);
+        };
+        $scope.search = function (username) {
+            getGithubUser(username);
+        };
+        var defaultUser = function () {
+            getGithubUser(username)
+        }
+        defaultUser();
     };
-
-    $scope.search = function(username){
-        getGithubUser(username);
-    };
-
-    var defaultUser = function(){
-        getGithubUser('DrGregoryHouse')
-    }
-    
-    defaultUser();
-    
-};
-app.controller("MainController", ["$scope", "$http", MainController]);
-
+    app.controller("MainController", ["$scope", "$http", MainController]);
 }());
