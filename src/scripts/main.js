@@ -2,7 +2,7 @@
     var app = angular.module('githubViewer', []);
     var MainController = function ($scope, $http) {
         var url = "https://api.github.com/users/";
-        var username = "angular"; // default username
+        //var username = "angular"; // default username
         
         var onRepos = function (response) {
             $scope.repos = response.data;
@@ -23,10 +23,6 @@
             getGithubUser(username);
         };
         $scope.repoSortOrder = "-stargazers_count"; // default order
-        var defaultUser = function () {
-            getGithubUser(username)
-        }
-        defaultUser();
     };
     app.controller("MainController", ["$scope", "$http", MainController]);
 }());
